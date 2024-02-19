@@ -1,0 +1,12 @@
+
+# format = """[123](bold purple)"""
+
+# Timeout for starship to scan files (in ms)
+scan_timeout = 10
+
+# Blankline at start of prompt
+add_newline = false
+
+# Palettes
+# [palettes.first]
+# blue = '21'

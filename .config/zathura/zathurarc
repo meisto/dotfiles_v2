@@ -1,0 +1,9 @@
+# Colors and Style
+set statusbar-bg "#87AF87"
+set statusbar-fg "#333333"
+set font "Fira Code 12"
+
+# Others
+set selection-clipboard clipboard
+set statusbar-home-tilde true
+set window-title-basename true

@@ -1,0 +1,134 @@
+# ======================================================================
+# Author: meisto
+# Creation Date: Thu 16 Nov 2023 03:15:58 AM CET
+# Description: -
+# ======================================================================
+add_newline = false
+
+
+format = """$cmd_duration\n$directory$git_branch$character"""
+
+[fill]
+symbol=" "
+
+[buf]
+symbol = " "
+
+[c]
+symbol = " "
+
+[directory]
+read_only = " "
+truncation_length = 3
+style = "bold #247ba0"
+
+[docker_context]
+symbol = " "
+
+[git_branch]
+symbol = " "
+style = "italic fg:#F0A868"
+format = '[$symbol$branch(:$remote_branch)]($style) '
+truncation_length=15
+
+[git_metrics]
+disabled = false
+
+[golang]
+symbol = " "
+
+[haskell]
+symbol = " "
+
+[hostname]
+ssh_symbol = " "
+
+[java]
+symbol = " "
+
+[julia]
+symbol = " "
+
+[lua]
+symbol = " "
+
+[memory_usage]
+symbol = " "
+
+[nim]
+symbol = " "
+
+[nix_shell]
+symbol = " "
+
+[nodejs]
+symbol = " "
+
+[os.symbols]
+Alpaquita = " "
+Alpine = " "
+Amazon = " "
+Android = " "
+Arch = " "
+Artix = " "
+CentOS = " "
+Debian = " "
+DragonFly = " "
+Emscripten = " "
+EndeavourOS = " "
+Fedora = " "
+FreeBSD = " "
+Garuda = "﯑ "
+Gentoo = " "
+HardenedBSD = "ﲊ "
+Illumos = " "
+Linux = " "
+Mabox = " "
+Macos = " "
+Manjaro = " "
+Mariner = " "
+MidnightBSD = " "
+Mint = " "
+NetBSD = " "
+NixOS = " "
+OpenBSD = " "
+openSUSE = " "
+OracleLinux = " "
+Pop = " "
+Raspbian = " "
+Redhat = " "
+RedHatEnterprise = " "
+Redox = " "
+Solus = "ﴱ "
+SUSE = " "
+Ubuntu = " "
+Unknown = " "
+Windows = " "
+
+[package]
+symbol = " "
+
+[pijul_channel]
+symbol = "🪺 "
+
+[python]
+symbol = " "
+
+[rlang]
+symbol = "ﳒ "
+
+[ruby]
+symbol = " "
+
+[rust]
+symbol = " "
+
+[scala]
+symbol = " "
+
+[cmd_duration]
+format = "took [$duration]($style)\n"
+
+[character]
+success_symbol = "[>](bold fg:#87AF87)"
+error_symbol = "[>](bold fg:#A22C29)"
