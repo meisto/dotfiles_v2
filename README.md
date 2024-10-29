@@ -25,3 +25,11 @@ Klone dieses Verzeichnis in das Heimverzeichnis. Führe dann den folgenden Code 
 cd ~/dotfiles
 stow .
 ```
+
+## TODO
+- [ ] Vielleicht sollten Debian-spezifische Operationen auf einem eigenen Branch liegen nicht in einem if.
+- [ ] Linter vor push zufügen (wo möglich).
+
+
+## Quellen & Ressourcen
+- [Stow Docs](https://www.gnu.org/software/stow/manual/stow.html#Tree-folding)
