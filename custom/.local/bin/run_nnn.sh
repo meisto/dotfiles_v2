@@ -22,4 +22,8 @@ export EDITOR="nvim"
 export NNN_COLORS="#C1C1C1C1"
 export NNN_OPENER="launcher.sh"
 export NNN_TRASH=1
+
+# Show hidden by default
+export NNN_OPTS="H"
+
 nnn -c

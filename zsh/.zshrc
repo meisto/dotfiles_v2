@@ -66,7 +66,6 @@ export GOPATH=$HOME/.go
 
 
 # Update path variable
-export PATH="$PATH:$HOME/.config/scripts" # Added my scripts to path
 # export PATH="$PATH:$HOME/.gems/bin" # Add ruby executables to path
 export PATH="$PATH:$HOME/.go/bin" # Add go executables to path
 # export PATH="$PATH:$HOME/.cargo/bin" # Add rust executables to path
