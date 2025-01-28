@@ -54,7 +54,7 @@ source "${HOME}/.config/zsh/setup/fzf.zsh"
 source "${HOME}/.config/zsh/setup/zoxide.zsh"
 source "${HOME}/.config/zsh/setup/deno.zsh"
 eval "$(starship init zsh)"
-eval "$(ssh-agent -s)"
+eval "$(ssh-agent -s)" > /dev/null
 
 
 
