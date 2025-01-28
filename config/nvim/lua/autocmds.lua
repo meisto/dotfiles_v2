@@ -1,7 +1,7 @@
 -- author: meisto
 -- date: 2024-01-23 21:16:25
 
-util = require("util")
+local util = require("util")
 
 
 vim.api.nvim_create_autocmd('FileType', {

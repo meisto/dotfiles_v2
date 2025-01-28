@@ -49,10 +49,11 @@ autoload -Uz compinit && compinit
 # Set up terminal programs
 source "${HOME}/.config/zsh/setup/nnn.zsh"
 source "${HOME}/.config/zsh/setup/man.zsh"
-source "${HOME}/.config/zsh/setup/starship.zsh"
 source "${HOME}/.config/zsh/setup/docker.zsh"
 source "${HOME}/.config/zsh/setup/fzf.zsh"
 source "${HOME}/.config/zsh/setup/zoxide.zsh"
+source "${HOME}/.config/zsh/setup/deno.zsh"
+eval "$(starship init zsh)"
 
 
 # Set up compiler paths

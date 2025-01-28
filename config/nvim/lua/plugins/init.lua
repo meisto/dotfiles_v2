@@ -6,12 +6,11 @@ return {
    'folke/which-key.nvim',
    'navarasu/onedark.nvim',
    'ggandor/leap.nvim',
-   'nvim-lua/plenary.nvim', -- Dependency on Telescope
    {
       'nvim-telescope/telescope.nvim',
       tag = '0.1.5',
+      dependencies={"nvim-lua/plenary.nvim"},
    },
-   { dir = "~/Projekte/tmp/" },
 }
 
 -- Other interesting addons:
