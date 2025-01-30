@@ -19,12 +19,13 @@ return {
          cmd = { 'gopls', '-logfile=/tmp/gopls.log', '-rpc.trace' },
          filetypes = { 'go', 'gomod' },
       }
+
       nvim_lsp.ts_ls.setup {
 	      filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact" },
 
-         -- only if a package.json file is found (to differenciate from deno projects.
+         -- only if a package.json file is found (to differenciate from deno projects).
          root_dir = nvim_lsp.util.root_pattern("package.json"),
-         single_file_support = false
+         single_file_support = false,
       }
 
       -- nvim_lsp.tsserver.setup {
@@ -71,6 +72,7 @@ return {
 
    nvim_lsp.denols.setup {
       root_dir = nvim_lsp.util.root_pattern("deno.json", "deno.jsonc"),
+         single_file_support = false,
       }
 
    end

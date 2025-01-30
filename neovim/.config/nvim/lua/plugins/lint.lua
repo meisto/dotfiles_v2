@@ -11,7 +11,7 @@ return {
          sh = {"shellcheck"},
          bash = {"shellcheck"},
          zsh = {"shellcheck"},
-         typescript = {"eslint"},
+         -- typescript = {"eslint"},
          javascript = {"eslint"},
          python = { "pylint"},
          golang = { "golangcilint" }
