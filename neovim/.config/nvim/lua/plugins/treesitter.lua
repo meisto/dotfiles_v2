@@ -7,22 +7,36 @@ return {
       'nvim-treesitter/nvim-treesitter',
       build = ":TSUpdate",
       config = function ()
-         local configs = require("nvim-treesitter.configs")
-
-         configs.setup({
+         require("nvim-treesitter.configs").setup({
             ensure_installed = {
                "c",
+               "css",
                "lua",
                "vim",
                "vimdoc",
                "javascript",
                "html",
-               "css"
+               "python",
+               "go"
             },
             sync_install = false,
             highlight = { enable = true },
             indent = { enable = true },
+            incremental_selection = {
+               enable = true,
+               keymaps = {
+                  init_selection = 'gnn',
+                  node_incremental = 'grn',
+                  scope_incremental = 'grc',
+                  node_decremental = 'grm',
+               }
+            },
          })
+
+vim.wo.foldmethod='expr'
+vim.cmd('set foldexpr=nvim_treesitter#foldexpr()')
+
+print('Loaded custom treesitter configs.')
       end
    },
    -- 'nvim-treesitter/playground',

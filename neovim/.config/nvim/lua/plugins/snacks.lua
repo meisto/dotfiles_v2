@@ -8,6 +8,9 @@ return {
    opts = {
       bigfile = { enabled = true },
       notifier = { enabled = true },
-      dashboard = { enabled = true },
+      dashboard = {
+         enabled = true,
+         -- { section = "header" }
+      },
    }
 }

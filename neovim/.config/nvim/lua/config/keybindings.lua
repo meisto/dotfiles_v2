@@ -13,7 +13,7 @@ require("which-key").add({
     { "<leader>en", "<cmd>lua vim.diagnostic.goto_next()<cr>", desc = "Open error message in floating window.", remap = false },
     { "<leader>ep", "<cmd>lua vim.diagnostic.goto_prev()<cr>", desc = "Open error message in floating window.", remap = false },
     { "<leader>fb", "<cmd>Telescope buffers<cr>", desc = "Find Buffer.", remap = false },
-    { "<leader>ff", "<cmd>Telescope find_files<cr>", desc = "Find File.", remap = false },
+    { "<leader>ff", "<cmd>Telescope find_files hidden=true<cr>", desc = "Find File.", remap = false },
     { "<leader>fg", "<cmd>Telescope live_grep<cr>", desc = "Grep in files.", remap = false },
     { "<leader>g", "<cmd>lua vim.lsp.buf.hover()<cr>", desc = "Open floating definition", remap = false },
     { "<leader>h", "<cmd>lua vim.lsp.buf.signature_help()<cr>", desc = "Show signature help.", remap = false },

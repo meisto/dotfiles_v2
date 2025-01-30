@@ -72,7 +72,7 @@ end
 -- local hostname = require('io').popen('hostname'):read()
 
 -- :help 'statusline' for codes
-function build_statusline()
+function Build_statusline()
    local stl = {
      get_mode_string(),
      '%#DarkGreyIn#%#DarkGrey# %t %#DarkGreyOut#',
@@ -87,7 +87,7 @@ function build_statusline()
 end
 
 -- Set the statusbar to evaluate the function on demand
-vim.o.statusline = '%!luaeval(\'build_statusline()\')'
+vim.o.statusline = '%!luaeval(\'Build_statusline()\')'
 
 
 print "Succesfully sourced 'statusline.lua'."

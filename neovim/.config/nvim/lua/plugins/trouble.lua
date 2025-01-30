@@ -3,6 +3,7 @@
 
 return {
    "folke/trouble.nvim",
+   enabled = false,
    opts = {},
    cmd="Trouble",
    dependencies = { "nvim-tree/nvim-web-devicons" }

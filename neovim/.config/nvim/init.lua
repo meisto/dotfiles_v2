@@ -6,17 +6,13 @@
 
 -- Helpfull resources:
 -- https://vonheikemen.github.io/devlog/tools/configuring-neovim-using-lua/
+require("config.settings")
+require("config.lazy")
 
--- Import the individuall scripts:
-local bootstrap = require("bootstrap")
-bootstrap.update_settings()
-bootstrap.initialize_package_manager()
-require("autocmds")
+require("config.autocmds")
 
-require("lazy").setup("plugins")
-
-require("keybindings")
-require("treesitter")
+require("config.keybindings")
+-- require("treesitter")
 
 require("colorschemes.onedark")
 
